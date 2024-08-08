@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Prerequisite Checker</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <h1>Prerequisite Checker</h1>
+    <nav>
+      <ul>
+        <li><a th:href="@{/addCourse}">Add Course</a></li>
+        <li>
+          <a th:href="@{/checkEligibleCourses}">Check Eligible Courses</a>
+        </li>
+        <li><a th:href="@{/checkNeededCourses}">Check Needed Courses</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Add Course</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <h1>Add Course</h1>
+    <form th:action="@{/addCourse}" method="post">
+      <label for="course">Course Name:</label>
+      <input type="text" id="course" name="course" required />
+      <button type="submit">Add</button>
+    </form>
+    <p th:text="${message}"></p>
+    <div th:if="${coursesTaken != null}">
+      <h2>Courses Taken</h2>
+      <ul>
+        <li th:each="course : ${coursesTaken}" th:text="${course}"></li>
+      </ul>
+    </div>
+    <a th:href="@{/}">Back to Home</a>
+  </body>
+</html>
