@@ -29,7 +29,7 @@ A full-stack application designed to help Rutgers University students plan their
 
 - **Backend:** Java, Spring Boot
 - **Frontend:** HTML, CSS
-- **Data Structures:** Adjacency Lists, HashMaps, Linked Lists
+- **Data Structures:** Adjacency Lists, HashMaps, Linked Lists, Graphs
 
 ---
 
